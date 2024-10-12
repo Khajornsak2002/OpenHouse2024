@@ -1,23 +1,15 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import AppRoutes from './routes/route'; // Ensure this path is correct
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Link className="App-link" to="/register">ลงทะเบียน</Link> {/* Use Link instead of a */}
+        <Link className="App-link" to="/mainpage">Main Page</Link> {/* Use Link instead of a */}
+      <AppRoutes /> {/* Use AppRoutes to define your routes */}
     </div>
   );
 }
