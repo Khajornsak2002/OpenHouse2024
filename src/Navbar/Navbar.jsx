@@ -7,14 +7,17 @@ function Navbar() {
     return (
       <nav className="navbar">
         <ul className="navbar-list">
-          <li className="navbar-item">
+          {/* <li className="navbar-item">
             <Link to="/mainpage" className="navbar-link">หน้าหลัก</Link>
-          </li>
+          </li> */}
           <li className="navbar-item">
             <Link to="/register" className="navbar-link">ลงทะเบียน</Link>
           </li>
           <li className="navbar-item">
             <Link to="/admin" className="navbar-link">Admin</Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/Check-in" className="navbar-link">Check IN</Link>
           </li>
         </ul>
       </nav>

@@ -20,6 +20,11 @@ const Admin = () => {
         }
     };
 
+    const handleLogout = () => {
+        setIsLoggedIn(false);
+        localStorage.removeItem('isLoggedIn'); // ลบสถานะการล็อกอิน
+    };
+
     useEffect(() => {
         if (isLoggedIn) {
             const fetchUsers = async () => {
@@ -80,6 +85,9 @@ const Admin = () => {
                 </form>
             ) : (
                 <div>
+                    <div className="logout-button-container">
+                        <button onClick={handleLogout}>Logout</button> {/* ปุ่ม Logout */}
+                    </div>
                     <h1>Registered Users</h1>
                     <table>
                         <thead>

@@ -7,18 +7,18 @@ body {
 }
 
 .container {
-    max-width: 400px; /* กำหนดความกว้างสูงสุด */
-    width: 100%; /* ให้ความกว้างเต็มที่ */
-    margin: 20px auto; /* Center horizontally with margin */
+    max-width: 900px; /* Increase max-width for larger input fields */
+    width: 100%;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff; /* สีพื้นหลังของ card */
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    height: auto; /* ปรับให้สูงตามเนื้อหา */
-    min-height: 500px; /* กำหนดความสูงขั้นต่ำ */
+    justify-content: center;
+    height: auto;
+    min-height: 500px;
 }
 
 h2 {
@@ -30,6 +30,9 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
+    width: 100%; /* เพิ่มขนาดความกว้างของฟอร์ม */
+    max-width: 900px; /* กำหนดขนาดความกว้างสูงสุด */
+    margin: 0 auto; /* จัดกึ่งกลางฟอร์ม */
 }
 
 label {
@@ -43,8 +46,8 @@ input {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
-    width: 100%; /* กำหนดให้ input เต็มความกว้าง */
-    box-sizing: border-box; /* ให้ padding รวมอยู่ในความกว้าง */
+    width: 100%; /* Ensure input fields take full width */
+    box-sizing: border-box;
     transition: border-color 0.3s;
 }
 
